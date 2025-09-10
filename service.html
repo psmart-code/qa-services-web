@@ -43,7 +43,16 @@
     header{position:sticky;top:0;z-index:50;background:#0f172a;color:#fff;box-shadow:0 2px 12px rgba(0,0,0,.15)}
     .nav-wrap{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
     .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.3px}
-    .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#0ea5e9)}
+    .brand /*.logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#0ea5e9)}*/
+    .logo{
+  width:28px;
+  height:28px;
+  border-radius:8px;
+  /* show your image; keep gradient as a fallback layer */
+  background:
+    url("assets/bugshiledLogo.png") center/contain no-repeat,
+    linear-gradient(135deg,#22d3ee,#0ea5e9);
+}
     .nav a{color:#cbd5e1;text-decoration:none;font-weight:600;margin-left:22px}
     .nav a:hover{color:#fff}
     .mob-btn{display:none;background:transparent;border:0;color:#fff;font-size:22px}
